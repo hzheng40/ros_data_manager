@@ -6,3 +6,6 @@ set -e
 
 # --- PyMongo ---
 python -m pip install pymongo
+
+# --- Tkinter ---
+
