@@ -11,12 +11,11 @@ class DataManager(Frame):
     def createWidgets(self):
         # adding quit button
         self.QUIT = Button(self, text='Quit', command=self.quit)
-        self.QUIT.grid(row=0, column=0)
-        self.QUIT.place(relx=.1, rely=.9, anchor='c')
+        self.QUIT.pack(side=RIGHT, padx=5, pady=5)
         # example of some sort of function button
         self.hi_there = Button(self, text='Hello', command=self.say_hi)
-        self.hi_there.grid(row=0, column=1)
-        self.hi_there.place(relx=.1, rely=.9, anchor='c')
+        self.hi_there.pack(side=RIGHT)
+       
         # TODO: add fuction buttons
 
         # adding a menu
