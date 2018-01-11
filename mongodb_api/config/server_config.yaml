@@ -1,0 +1,13 @@
+server_ip : 'localhost'
+port : 27017
+data_rate : 10
+log_image : true
+log_joint : true
+log_lidar : true
+log_odom : true
+log_realsense : true
+log_kinect : true
+author : 'ServiceRobot'
+session_id : 1
+bag_name : 'mongodb_to_bag.bag'
+where_to_write : 'write_bag'

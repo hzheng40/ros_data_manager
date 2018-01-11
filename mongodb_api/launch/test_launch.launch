@@ -1,0 +1,4 @@
+<launch>
+	<rosparam command="load" file="$(find mongodb_api)/config/server_config.yaml"/>
+	<node name='test_pub_mongodb' pkg='mongodb_api' type='test_pub.py' />
+</launch>

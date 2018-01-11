@@ -1,0 +1,7 @@
+<launch>
+	<rosparam command="load" file="$(find mongodb_api)/config/server_config.yaml"/>
+	<arg name='query' default=''/>
+	<param name='write_query' value='$(arg query)' />
+	<param name='bag_path' value='$(find mongodb_api)/bag' />
+	<node name='mongo_bag_converter' pkg='mongodb_api' type='bag_converter.py' output='screen' />
+</launch>

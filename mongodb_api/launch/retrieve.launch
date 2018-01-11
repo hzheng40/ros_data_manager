@@ -1,0 +1,6 @@
+<launch>
+	<rosparam command="load" file="$(find mongodb_api)/config/server_config.yaml"/>
+	<arg name='query'/>
+	<param name='search_query' value='$(arg query)' />
+	<node name='ros_mongo_retriever' pkg='mongodb_api' type='server_to_ros.py' output='screen' />
+</launch>
