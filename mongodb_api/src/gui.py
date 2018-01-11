@@ -44,6 +44,7 @@ class DataManager(Frame):
         self.menu.add_cascade(label='Settings', menu=settings)
 
     def __init__(self, master=None):
+        #TODO: divide and conquer, with multiple layers of frames
         Frame.__init__(self, master)
         self.master.title('ROS Data Manager')
         self.pack(fill=BOTH, expand=1)
